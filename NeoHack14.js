@@ -7,15 +7,36 @@ console.log("No Pets, No Shoes, No Food FTW");
 // readerChoice.innerHTML= "Let's get hacking!";
 
 var storyData = [{
-	question: "Question 1",
-				answer1: "Answer 1",
-				answer2: "Answer 2",
+				question: "A girl wants to learn to code.  To hack or not to hack?",
+				answer1: "Stay home and binge watch House of Cards on Netflix.",
+				answer2: "Sign up for NeoHack 14.",
 			},
 			{
-				question: "Question 2!",
-				answer1: "yes!",
-				answer2: "no!",
-			}]
+				question: "You arrive and NeoHack asks - What's your talent?",
+				answer1: "Freak out and run home!",
+				answer2: "Believe in yourself and pick a pretty sticker.",
+			},
+			{
+				question: "Listen to the pitches.",
+				answer1: "Join a team.",
+				answer2: "BE a team.",
+			},
+			{
+				question: "Select a kind project.",
+				answer1: "Change the world in 6 hours.",
+				answer2: "Keep it simple, stupid.",
+			},
+			{
+				question: "Design your project.",
+				answer1: "Make a Random Cat Generator.",
+				answer2: "Create your own NeoHack adventure.",
+			},
+			{
+				question: "CONGRATULATIONS! Macys.com awards you a prize, oh happy day.  Everyone go to Macys.com",
+				answer1: "Revel in the glory.",
+				answer2: "Play again and keep your hack alive.",
+			}
+			]
 
 $('document').ready(function chooseYourOwnAdventure(){
 	var counter = 0;
@@ -25,7 +46,7 @@ $('document').ready(function chooseYourOwnAdventure(){
 		$('#answer-body2').text(storyData[counter].answer2);
 		counter++;
 	};
-	$('#answer-body1').click(function() {
+	$('#answer-body2').click(function() {
 		choosePath();
 	});
 });
